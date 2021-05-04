@@ -17,7 +17,7 @@ public class InputConsole implements Input {
 
 	@Override
 	public CarNameRequest getCarNameRequest() throws InvalidNameException {
-		System.out.println(CAR_NAME_MESSAGE);
+		System.out.print(CAR_NAME_MESSAGE);
 		String rawInput = scanner.nextLine();
 		validateNames(rawInput);
 		return new CarNameRequest(Arrays.asList(rawInput.split(",")));
@@ -25,7 +25,7 @@ public class InputConsole implements Input {
 
 	@Override
 	public NumTrialRequest getNumTrialRequest() {
-		System.out.println(NUM_TRIAL_MESSAGE);
+		System.out.print(NUM_TRIAL_MESSAGE);
 		int numTrial = scanner.nextInt();
 		return new NumTrialRequest(numTrial);
 	}
