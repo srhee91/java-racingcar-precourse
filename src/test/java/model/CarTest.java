@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class CarTest {
 	@Test
 	void moveTest() {
-		Car car = new Car();
+		Car car = new Car("Porch", 0);
 
 		int position = car.getPosition();
 		car.move();

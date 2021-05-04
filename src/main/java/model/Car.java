@@ -5,7 +5,13 @@ import java.util.Random;
 public class Car {
 	private static Random random = new Random();
 
+	private String name;
 	private int position;
+
+	public Car(String name, int position) {
+		this.name = name;
+		this.position = position;
+	}
 
 	public int getPosition() {
 		return position;
